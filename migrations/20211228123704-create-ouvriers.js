@@ -9,15 +9,19 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       idOUVRIERS: {
+        allowNull: false,
         type: Sequelize.INTEGER
       },
       NomOuvrier: {
+        allowNull: false,
         type: Sequelize.STRING
       },
       PrenomOuvrier: {
+        allowNull: false,
         type: Sequelize.STRING
       },
       EmailOuvrier: {
+        allowNull: false,
         type: Sequelize.STRING
       },
       createdAt: {

@@ -11,6 +11,12 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      models.TACHES.belongsTo(models.CHANTIERS , {
+        foreignkey:{
+          allowNull:false
+        }
+
+      });
     }
   };
   TACHES.init({

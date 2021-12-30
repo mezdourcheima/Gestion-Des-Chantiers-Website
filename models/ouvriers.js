@@ -12,7 +12,12 @@ module.exports = (sequelize, DataTypes) => {
     static associate(models) {
       // define association here
       models.OUVRIERS.hasMany(models.SPECIALITES)
+      models.OUVRIERS.belongsTo(models.CHANTIERS , {
+        foreignkey:{
+          allowNull:false
+        }
 
+      });
     }
   };
   OUVRIERS.init({

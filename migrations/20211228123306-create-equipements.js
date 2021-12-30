@@ -9,12 +9,15 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       idEQUIPEMENTS: {
+        allowNull: false,
         type: Sequelize.INTEGER
       },
       Libelle: {
+        allowNull: false,
         type: Sequelize.STRING
       },
       Prix: {
+        allowNull: false,
         type: Sequelize.INTEGER
       },
       createdAt: {

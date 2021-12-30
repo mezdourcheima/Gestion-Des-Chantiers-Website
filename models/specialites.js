@@ -11,6 +11,12 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      models.SPECIALITES.belongsTo(models.CHANTIERS , {
+        foreignkey:{
+          allowNull:false
+        }
+
+      });
     }
   };
   SPECIALITES.init({

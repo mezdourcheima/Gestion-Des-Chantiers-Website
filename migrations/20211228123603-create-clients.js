@@ -9,15 +9,19 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       idCLIENTS: {
+        allowNull: false,
         type: Sequelize.INTEGER
       },
       NomClient: {
+        allowNull: false,
         type: Sequelize.STRING
       },
       PrenomCL: {
+        allowNull: false,
         type: Sequelize.STRING
       },
       EmailCL: {
+        allowNull: false,
         type: Sequelize.STRING
       },
       createdAt: {

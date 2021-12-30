@@ -9,9 +9,11 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       idTACHES: {
+        allowNull: false,
         type: Sequelize.INTEGER
       },
       DureeTache: {
+        allowNull: false,
         type: Sequelize.STRING
       },
       createdAt: {
